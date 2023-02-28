@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --mainclr: #239f85; */
+    --mainclr: #2098df;
+    --secclr: #ff5d22;
+    /* --third: #DFE4E0; */
+    --lighttext: #484646;
+    --white: #fff;
+    --lightmainclr: #d8f2fb;
+    /* --mainafterclr: hsl(167, 81%, 79%); */
+    --headingfont: 'Work Sans', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-size: 5rem;
+    font-family: var(--headingfont);
+    text-align: center;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    /* width: 10rem; */
+    width: 10%;
+    background-color: var(--mainclr);
+    height: .3rem;
+    bottom: -.2rem;
+    left: 45%;
+    border-radius: 4rem;
+}
+
+
+
+/* ============doctor section============ */
+.our-doctors {
+    padding: 4rem 7%;
+}
+
+.our-doctors h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--mainclr);
+    margin-bottom: 30px;
+}
+
+.main-doctor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.inner-doctor {
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    /* cursor: pointer; */
+
+}
+
+.inner-doctor:hover {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.inner-doctor img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.doctor-desc h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+.doctor-desc p {
+    color: var(--lighttext);
+    text-align: justify;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+
+
+.doc-icons {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.doc-icons div {
+    font-size: 1.6rem;
+    color: var(--mainclr);
+    background: var(--lightmainclr);
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.doc-icons div:hover {
+    transform: scale(1.2);
+}
+
+/* ====================Footer Section============= */
+
+.footer {
+    padding: 2rem 2%;
+    background: var(--lightmainclr);
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-methode {
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    color: var(--lighttext);
+}
+
+.contact-title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-methode span {
+    margin-top: 2rem;
+}
+
+
+.contact-methode li {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.contact-methode li i {
+    margin-right: .8rem;
+}
+
+.social-icon {
+    margin-right: 3rem;
+    font-size: 2.5rem;
+    transition: all 0.3s;
+}
+
+.social-icon i:hover {
+    color: var(--secclr);
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+
+.inner-footer {
+    padding: 2rem;
+    color: var(--lighttext);
+    max-width: 40rem;
+
+}
+
+.inner-footer h2 {
+    font-size: 1.8rem;
+    color: var(--mainclr);
+}
+
+
+
+.inner-footer a {
+    color: var(--lighttext);
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    transition: all 0.3s;
+}
+
+.inner-footer a:hover {
+    color: var(--secclr);
+}
+
+.map {
+    height: 30rem;
+    width: 100%;
+    border: none;
+    margin-top: .6rem;
+}
+
+/* ==================sub Footer=========== */
+
+.sub-footer {
+    text-align: center;
+    padding: .6rem;
+    background-color: var(--mainclr);
+    font-size: 1.5rem;
+}
+
+
+
+/* ==========================Media Query============ */
+@media only screen and (max-width:800px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.3rem 2.3rem;
+    }
+
+    #menubar {
+        display: inline;
+    }
+
+    .navbar {
+        /* height: 100vh; */
+        align-items: start;
+    }
+
+    .nav-list {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        gap: 5rem;
+    }
+
+    #logo img {
+        width: 2rem;
+    }
+
+    #logo span {
+        font-size: 2rem;
+    }
+
+    .mobile_nav {
+        display: flex;
+    }
+
+    /* =============hero section================ */
+    /* .hero-image {
+        background-image: url(/images/background_mob.jpg);
+        background-position: center;
+    } */
+    .hero-content {
+        top: 10rem;
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    /* ===================Services Section==================== */
+
+    .services {
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ====================Gallery Section============================ */
+    .main-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inner-gallery img {
+        border-radius: 10px;
+    }
+
+    /* ============Why Choose us================ */
+    .mob-title {
+        display: block;
+    }
+
+    .mob-title h1 {
+        font-size: 3rem;
+        color: var(--mainclr);
+        margin-bottom: 20px;
+    }
+
+    .main-chose {
+        gap: 15px;
+    }
+
+    .inner-chose {
+        display: flex;
+        justify-content: center;
+    }
+
+    .inner-chose h1 {
+        display: none;
+    }
+
+    .inner-chose img {
+        width: 80%;
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+
+    .main-inner-chose {
+        margin: -1.4rem 0;
+        text-align: justify;
+    }
+
+    /* ============doctor section============ */
+    .our-doctors {
+        padding: 4rem 7%;
+    }
+
+    .our-doctors h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: var(--mainclr);
+        margin-bottom: 3rem;
+    }
+
+    .main-doctor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    /* ==================sub Footer=========== */
+
+    .sub-footer {
+        font-size: 1rem;
+    }
+}
+
+
+/*  ==================================================================
+                    Media 600
+================================================================*/
+@media only screen and (max-width:600px) {
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .btn {
+        padding: 1rem;
+        display: table;
+        margin: auto;
+    }
+
+
+    /* =============hero section================ */
+
+    .hero-image {
+        background: url(/images/background_mob1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-content h1 {
+        font-size: 5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* =========================About section================== */
+    .main-about1,
+    .main-about2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+
+    .main-about2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .inner-image img,
+    #dr-image img {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .inner-content p {
+        text-align: justify;
+    }
+
+    /* ===================Services Section==================== */
+
+    .services {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        width: 75%;
+        margin: auto;
+    }
+
+    /* ====================Gallery Section============================ */
+    .main-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* ============doctor section============ */
+    .main-doctor {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
