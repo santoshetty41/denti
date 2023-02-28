@@ -601,6 +601,8 @@ html {
 
     #menubar {
         display: inline;
+        font-size: 4rem;
+
     }
 
     .navbar {
@@ -618,15 +620,19 @@ html {
     }
 
     #logo img {
-        width: 2rem;
+        width: 4rem;
     }
 
     #logo span {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .mobile_nav {
         display: flex;
+    }
+
+    .nav-list a:hover:after {
+        content: none;
     }
 
     /* =============hero section================ */
@@ -635,7 +641,7 @@ html {
         background-position: center;
     } */
     .hero-content {
-        top: 10rem;
+        top: 30%;
         width: 100%;
         left: 0;
         transform: none;
@@ -644,14 +650,15 @@ html {
 
     .hero-content p {
         font-size: 1.5rem;
-        text-align: justify;
+        text-align: center;
+
         padding: 1rem;
     }
 
     /* ===================Services Section==================== */
 
     .services {
-        gap: 1rem;
+        gap: 3rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -697,6 +704,7 @@ html {
     .main-inner-chose {
         margin: -1.4rem 0;
         text-align: justify;
+        padding-left: 5rem;
     }
 
     .chose-icon {
@@ -732,7 +740,8 @@ html {
     /* ==================sub Footer=========== */
 
     .sub-footer {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
 }
@@ -798,12 +807,12 @@ html {
     /* ===================Services Section==================== */
 
     .services {
-        gap: 2rem;
+        gap: 5rem;
         grid-template-columns: 1fr;
     }
 
     .service {
-        width: 75%;
+        width: 80%;
         margin: auto;
     }
 
